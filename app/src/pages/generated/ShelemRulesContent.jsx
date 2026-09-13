@@ -343,7 +343,7 @@ export default function ShelemRulesContent() {
         <li><strong style={{ "color": "#f3d391" }}>حکم</strong> — شناخته‌شده‌ترین بازی ورق ایران. ساده‌تر شروع می‌شود، عمیق ادامه پیدا می‌کند.</li>
         <li><strong style={{ "color": "#f3d391" }}>بی‌بی‌سلام</strong> — سبک‌تر، سریع‌تر، مناسب جمع‌های بزرگ‌تر.</li>
       </ul>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>شروع بازی</button>
+      <a href="https://hakem.am/" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>شروع بازی</a>
     </section>
   </main>
     </>

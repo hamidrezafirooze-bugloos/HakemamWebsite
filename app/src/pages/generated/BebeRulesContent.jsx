@@ -207,7 +207,7 @@ export default function BebeRulesContent() {
         <li><strong style={{ "color": "#f3d391" }}>حکم</strong> — شناخته‌شده‌ترین بازی ورق ایران. اگر بی‌بی سلام برایتان سبک بود، اینجا شروع کنید.</li>
         <li><strong style={{ "color": "#f3d391" }}>شلم</strong> — سنگین‌ترین بازی مجموعه‌ی ما. حراج، ریسک و امتیاز.</li>
       </ul>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>شروع بازی</button>
+      <a href="https://hakem.am/" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>شروع بازی</a>
     </section>
   </main>
     </>
