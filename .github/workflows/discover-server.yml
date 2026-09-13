@@ -14,37 +14,34 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get update -y && sudo apt-get install -y sshpass
 
-      - name: Probe server
+      - name: Probe server (Caddy)
         env:
           SSHPASS: ${{ secrets.DEPLOY_PASSWORD }}
         run: |
           sshpass -e ssh -o StrictHostKeyChecking=no p09@65.109.208.86 '
-            echo "== whoami / home / sudo =="
-            whoami
-            echo "$HOME"
-            sudo -n true 2>/dev/null && echo "passwordless sudo: yes" || echo "passwordless sudo: no"
+            echo "== Caddyfile =="
+            cat /etc/caddy/Caddyfile 2>&1
 
             echo
-            echo "== web server processes =="
-            ps aux | grep -Ei "nginx|apache|httpd|caddy|litespeed" | grep -v grep || echo "(none found)"
+            echo "== Caddyfile includes (if any import directive is used) =="
+            grep -i "^\s*import" /etc/caddy/Caddyfile 2>/dev/null
+            ls -la /etc/caddy/ 2>&1
+            for f in /etc/caddy/sites-enabled/* /etc/caddy/conf.d/* /etc/caddy/sites/*; do
+              [ -f "$f" ] && echo "--- $f ---" && cat "$f"
+            done 2>/dev/null
 
             echo
-            echo "== nginx site configs (best effort) =="
-            cat /etc/nginx/sites-enabled/* 2>/dev/null
-            cat /etc/nginx/conf.d/*.conf 2>/dev/null
+            echo "== home dir listing (top level + one deep) =="
+            ls -la /home/p09
+            find /home/p09 -maxdepth 2 -type d 2>/dev/null
 
             echo
-            echo "== apache site configs (best effort) =="
-            cat /etc/apache2/sites-enabled/*.conf 2>/dev/null
+            echo "== caddy process cwd / open files (best effort) =="
+            ls -la /proc/$(pgrep -o caddy)/cwd 2>/dev/null
 
             echo
-            echo "== common web root candidates =="
-            for d in /var/www/html /var/www /home/p09/public_html /home/p09/htdocs /home/p09/www /home/p09/domains /usr/share/nginx/html; do
-              echo "--- $d ---"
-              ls -la "$d" 2>/dev/null || echo "(missing or no access)"
+            echo "== any index.* on the whole accessible filesystem under /home and /srv and /opt =="
+            for d in /home/p09 /srv /opt; do
+              [ -d "$d" ] && find "$d" -maxdepth 6 -iname "index.*" 2>/dev/null
             done
-
-            echo
-            echo "== index.* files under home and var/www =="
-            find /home/p09 /var/www /usr/share/nginx 2>/dev/null -maxdepth 5 -iname "index.*"
           '
