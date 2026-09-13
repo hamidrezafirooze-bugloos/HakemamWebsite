@@ -1,0 +1,46 @@
+name: Discover server web root
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install sshpass
+        run: sudo apt-get update -y && sudo apt-get install -y sshpass
+
+      - name: Probe server
+        env:
+          SSHPASS: ${{ secrets.DEPLOY_PASSWORD }}
+        run: |
+          sshpass -e ssh -o StrictHostKeyChecking=no p09@65.109.208.86 '
+            echo "== whoami / home / sudo =="
+            whoami
+            echo "$HOME"
+            sudo -n true 2>/dev/null && echo "passwordless sudo: yes" || echo "passwordless sudo: no"
+
+            echo
+            echo "== web server processes =="
+            ps aux | grep -Ei "nginx|apache|httpd|caddy|litespeed" | grep -v grep || echo "(none found)"
+
+            echo
+            echo "== nginx site configs (best effort) =="
+            cat /etc/nginx/sites-enabled/* 2>/dev/null
+            cat /etc/nginx/conf.d/*.conf 2>/dev/null
+
+            echo
+            echo "== apache site configs (best effort) =="
+            cat /etc/apache2/sites-enabled/*.conf 2>/dev/null
+
+            echo
+            echo "== common web root candidates =="
+            for d in /var/www/html /var/www /home/p09/public_html /home/p09/htdocs /home/p09/www /home/p09/domains /usr/share/nginx/html; do
+              echo "--- $d ---"
+              ls -la "$d" 2>/dev/null || echo "(missing or no access)"
+            done
+
+            echo
+            echo "== index.* files under home and var/www =="
+            find /home/p09 /var/www /usr/share/nginx 2>/dev/null -maxdepth 5 -iname "index.*"
+          '
