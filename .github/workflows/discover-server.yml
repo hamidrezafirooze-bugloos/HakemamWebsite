@@ -2,6 +2,10 @@ name: Discover server web root
 
 on:
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-server.yml'
 
 jobs:
   discover:
