@@ -1,0 +1,38 @@
+name: Deploy to server
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Build
+        working-directory: app
+        run: npm run build
+
+      - name: Install sshpass + rsync
+        run: sudo apt-get update -y && sudo apt-get install -y sshpass rsync
+
+      - name: Deploy (mirror app/dist -> /srv/www/p09, removing anything old)
+        env:
+          SSHPASS: ${{ secrets.DEPLOY_PASSWORD }}
+        run: |
+          sshpass -e rsync -avz --delete \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            app/dist/ p09@65.109.208.86:/srv/www/p09/
