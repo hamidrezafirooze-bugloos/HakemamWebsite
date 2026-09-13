@@ -7,7 +7,7 @@ export default function BebeRulesContent() {
     <>
       <GoatWidget
         ariaLabel="بز کوهی با نقش گل شاه‌عباسی"
-        patternUrl="/assets/shah-abbasi.jpg"
+        patternUrl="/assets/shah-abbasi.webp"
         patternSize="auto 300px"
         patternPosition="center 42%"
         heading="گل شاه عباسی"

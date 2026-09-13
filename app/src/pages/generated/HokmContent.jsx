@@ -9,7 +9,7 @@ export default function HokmContent() {
       <style>{hoverCss}</style>
       <main>
     <section style={{ "position": "relative", "overflow": "hidden" }}>
-    <div style={{ "position": "absolute", "inset": "0", "backgroundImage": "linear-gradient(270deg,rgba(24,6,5,0.86) 0%,rgba(24,6,5,0.66) 42%,rgba(24,6,5,0.3) 100%),url('/assets/hokm-hero-bg.jpg')", "backgroundSize": "cover", "backgroundPosition": "center", "pointerEvents": "none" }}></div>
+    <div style={{ "position": "absolute", "inset": "0", "backgroundImage": "linear-gradient(270deg,rgba(24,6,5,0.86) 0%,rgba(24,6,5,0.66) 42%,rgba(24,6,5,0.3) 100%),url('/assets/hokm-hero-bg.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "pointerEvents": "none" }}></div>
     <div style={{ "position": "relative", "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(48px,7vw,88px) clamp(16px,4vw,24px) clamp(36px,5vw,56px)" }}>
       <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 22px" }}>بازی حکم آنلاین</p>
       <h1 style={{ "fontSize": "clamp(30px,7vw,56px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.28", "margin": "0 0 22px", "maxWidth": "800px", "letterSpacing": "-0.015em", "textWrap": "pretty" }}>حکم، همین حالا، با همان سه نفر</h1>
@@ -35,18 +35,18 @@ export default function HokmContent() {
     <section style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(36px,5vw,56px) clamp(16px,4vw,24px)", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>
       <h2 style={{ "fontSize": "clamp(23px,4.4vw,32px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 28px" }}>دو دلیل که اینجا بازی کنی</h2>
       <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(min(320px,100%),1fr))", "gap": "18px" }}>
-        <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-1.jpg')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
+        <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-1.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
           <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>رتبه‌ای که واقعاً معنا دارد</h3>
           <p style={{ "fontSize": "16px", "color": "#FFF3E2", "lineHeight": "1.95", "margin": "0" }}>همه می‌گویند حکم‌باز خوبی هستند. اینجا معلوم می‌شود. بعد از هر بازی، کیفیت تصمیم‌هایت سنجیده می‌شود — نه فقط اینکه بردی یا باختی، چون در حکم شانس هم نقش دارد. رتبه‌ی شخصی خودت را داری، و یک رتبه‌ی جداگانه با هر کسی که با او یار می‌شوی.</p>
         </div>
-        <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-2.jpg')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
+        <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-2.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
           <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>حریفی که کارت می‌شمارد</h3>
           <p style={{ "fontSize": "16px", "lineHeight": "1.95", "margin": "0", "color": "#FFF3E2" }}>اگر کسی دم دستت نیست، با حریفی بازی می‌کنی که مثل یک بازیکن قوی فکر می‌کند — کارت‌های رفته را می‌شمارد، از کارت‌های تو حدس می‌زند، و به این راحتی‌ها نمی‌بازد. برای تمرین بین دورهمی‌ها.</p>
         </div>
       </div>
     </section>
 
-    <section style={{ "position": "relative", "backgroundImage": "linear-gradient(rgba(20,6,5,0.45),rgba(20,6,5,0.47)),url('/assets/hokm-howto-bg.jpg')", "backgroundSize": "cover", "backgroundPosition": "center", "borderTop": "1px solid rgba(232,193,105,0.24)", "borderBottom": "1px solid rgba(232,193,105,0.24)" }}>
+    <section style={{ "position": "relative", "backgroundImage": "linear-gradient(rgba(20,6,5,0.45),rgba(20,6,5,0.47)),url('/assets/hokm-howto-bg.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "borderTop": "1px solid rgba(232,193,105,0.24)", "borderBottom": "1px solid rgba(232,193,105,0.24)" }}>
       <div style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(40px,5.5vw,64px) clamp(16px,4vw,24px)" }}>
       <h2 style={{ "fontSize": "clamp(23px,4.4vw,32px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 28px" }}>چطور شروع کنی</h2>
       <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(min(240px,100%),1fr))", "gap": "18px" }}>
@@ -102,7 +102,7 @@ export default function HokmContent() {
       <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px", "maxWidth": "620px" }}>در مرورگر بازی کن، یا اپ را بگیر و روی گوشی‌ات داشته باش.</p>
       <a href="#" onClick={go.download} style={{ "fontSize": "16px", "fontWeight": "700" }}>دریافت برنامه →</a>
       </div>
-      <img src="/assets/hokm-mobile.png" alt="مرد قاجاری روی صندلی با گوشی در دست" style={{ "width": "min(420px,100%)", "height": "auto", "display": "block", "marginBottom": "0", "filter": "drop-shadow(0 -10px 30px rgba(0,0,0,0.45))" }} />
+      <img src="/assets/hokm-mobile.webp" alt="مرد قاجاری روی صندلی با گوشی در دست" style={{ "width": "min(420px,100%)", "height": "auto", "display": "block", "marginBottom": "0", "filter": "drop-shadow(0 -10px 30px rgba(0,0,0,0.45))" }} />
     </section>
 
     <section style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(36px,5vw,56px) clamp(16px,4vw,24px)", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>

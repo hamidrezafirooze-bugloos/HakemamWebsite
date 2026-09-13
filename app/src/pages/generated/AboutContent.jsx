@@ -7,7 +7,7 @@ export default function AboutContent() {
     <>
       <main style={{ "maxWidth": "880px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "animation": "stepRise 0.7s cubic-bezier(0.22,1,0.36,1) 0ms both", "position": "relative", "padding": "clamp(44px,7vw,80px) 0 44px", "overflow": "hidden" }}>
-      <div aria-hidden="true" style={{ "position": "absolute", "top": "-41px", "left": "-83px", "width": "340px", "height": "340px", "opacity": "0.4", "backgroundImage": "url('/assets/eslimi-transparent.png')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
+      <div aria-hidden="true" style={{ "position": "absolute", "top": "-41px", "left": "-83px", "width": "340px", "height": "340px", "opacity": "0.4", "backgroundImage": "url('/assets/eslimi-transparent.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
       <p style={{ "position": "relative", "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>درباره‌ی حاکمم</p>
       <h1 style={{ "position": "relative", "fontSize": "clamp(28px,6.2vw,48px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.3", "margin": "0 0 26px", "letterSpacing": "-0.015em" }}>یک میز برای بازی‌های ورق ایرانی</h1>
       
@@ -62,7 +62,7 @@ export default function AboutContent() {
       </div>
       <p style={{ "fontSize": "18px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px" }}>بازی‌های ورق ایرانی دهه‌هاست هر شب روی میزهای این کشور بازی می‌شوند. ولی نسخه‌ی دیجیتالشان معمولاً طوری ساخته شده که انگار کسی واقعاً به بازی و به آدم‌هایی که بازی‌اش می‌کنند اهمیت نداده.</p>
       <div style={{ "position": "relative", "display": "flex", "justifyContent": "center", "padding": "30px 24px", "margin": "0 0 22px", "borderTop": "1px solid rgba(232,193,105,0.22)", "borderBottom": "1px solid rgba(232,193,105,0.22)", "overflow": "hidden" }}>
-        <div aria-hidden="true" style={{ "position": "absolute", "top": "-40px", "right": "-30px", "width": "220px", "height": "220px", "opacity": "0.45", "backgroundImage": "url('/assets/eslimi-transparent.png')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
+        <div aria-hidden="true" style={{ "position": "absolute", "top": "-40px", "right": "-30px", "width": "220px", "height": "220px", "opacity": "0.45", "backgroundImage": "url('/assets/eslimi-transparent.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
         <p style={{ "position": "relative", "fontSize": "clamp(20px,3.4vw,26px)", "fontWeight": "700", "color": "#f3d391", "lineHeight": "1.7", "margin": "0", "textAlign": "center" }}>به نظرمان حیف بود.</p>
       </div>
       <p style={{ "fontSize": "18px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px" }}>چیزی که می‌خواهیم ساده است: جایی که ایرانی‌ها کنار هم بنشینند و خوش بگذرد. اول از همه این باید یک بازی خوب باشد — اگر سرگرم‌کننده نباشد، هیچ حرف دیگری شنیده نمی‌شود.</p>
@@ -78,7 +78,7 @@ export default function AboutContent() {
       <div style={{ "display": "flex", "gap": "28px", "alignItems": "flex-start", "flexWrap": "wrap" }}>
         <div style={{ "flex": "0 1 240px", "minWidth": "200px", "position": "relative", "padding": "10px", "border": "1px solid rgba(232,193,105,0.3)", "borderRadius": "4px" }}>
           <div style={{ "position": "absolute", "inset": "4px", "border": "1px solid rgba(232,193,105,0.16)", "borderRadius": "3px", "pointerEvents": "none" }}></div>
-          <img src="/assets/home-carpet-bg.jpg" alt="قالی دست‌باف ایرانی" style={{ "width": "100%", "height": "auto", "display": "block", "borderRadius": "2px" }} />
+          <img src="/assets/home-carpet-bg.webp" alt="قالی دست‌باف ایرانی" style={{ "width": "100%", "height": "auto", "display": "block", "borderRadius": "2px" }} />
         </div>
         <div style={{ "flex": "1 1 340px", "minWidth": "280px" }}>
           <p style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "700", "color": "#f3d391", "lineHeight": "1.8", "margin": "0 0 18px" }}>هر چیزی که در بازی به دست می‌آوری، یک چیز واقعی است.</p>
@@ -91,7 +91,7 @@ export default function AboutContent() {
     </section>
 
     <section style={{ "animation": "stepRise 0.7s cubic-bezier(0.22,1,0.36,1) 450ms both", "padding": "0 0 44px" }}>
-      <div style={{ "position": "relative", "backgroundImage": "linear-gradient(270deg,rgba(26,10,8,0.96) 0%,rgba(26,10,8,0.94) 58%,rgba(26,10,8,0.5) 100%),url('/assets/birad-banner.jpg')", "backgroundSize": "cover", "backgroundPosition": "left bottom", "border": "1px solid rgba(232,193,105,0.3)", "borderRadius": "4px", "padding": "clamp(24px,4vw,38px) clamp(20px,3.5vw,34px)", "minHeight": "190px", "display": "flex", "gap": "22px", "alignItems": "flex-start", "flexWrap": "wrap" }}>
+      <div style={{ "position": "relative", "backgroundImage": "linear-gradient(270deg,rgba(26,10,8,0.96) 0%,rgba(26,10,8,0.94) 58%,rgba(26,10,8,0.5) 100%),url('/assets/birad-banner.webp')", "backgroundSize": "cover", "backgroundPosition": "left bottom", "border": "1px solid rgba(232,193,105,0.3)", "borderRadius": "4px", "padding": "clamp(24px,4vw,38px) clamp(20px,3.5vw,34px)", "minHeight": "190px", "display": "flex", "gap": "22px", "alignItems": "flex-start", "flexWrap": "wrap" }}>
         <span aria-hidden="true" style={{ "position": "absolute", "top": "10px", "right": "10px", "width": "18px", "height": "18px", "borderTop": "1px solid rgba(232,193,105,0.55)", "borderRight": "1px solid rgba(232,193,105,0.55)" }}></span>
           <span aria-hidden="true" style={{ "position": "absolute", "bottom": "10px", "left": "10px", "width": "18px", "height": "18px", "borderBottom": "1px solid rgba(232,193,105,0.55)", "borderLeft": "1px solid rgba(232,193,105,0.55)" }}></span>
         <span aria-hidden="true" style={{ "flex": "0 0 30px", "width": "30px", "height": "30px", "border": "1px solid rgba(232,193,105,0.6)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "6px", "background": "rgba(232,193,105,0.4)" }}></span></span>

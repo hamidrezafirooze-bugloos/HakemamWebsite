@@ -7,7 +7,7 @@ export default function ShelemRulesContent() {
     <>
       <GoatWidget
         ariaLabel="بز کوهی با نقش بته جقه"
-        patternUrl="/assets/goat-pattern-boteh.jpg"
+        patternUrl="/assets/goat-pattern-boteh.webp"
         patternSize="110px auto"
         heading="بته جقه"
         paragraphs={[

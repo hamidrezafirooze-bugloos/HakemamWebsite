@@ -39,7 +39,7 @@ export default function HomeContent() {
 
         <div style={{ "width": "244px", "height": "342px", "position": "relative", "transformStyle": "preserve-3d", "transition": "transform 0.65s cubic-bezier(0.2,0.7,0.25,1)", "cursor": "pointer" }} className="hv1">
           <div style={{ "position": "absolute", "inset": "0", "backfaceVisibility": "hidden", "borderRadius": "16px", "overflow": "hidden", "border": "1px solid rgba(232,193,105,0.28)", "boxShadow": "0 14px 38px rgba(0,0,0,0.45)" }}>
-            <img src="/assets/card-hokm.jpg" alt="حکم" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
+            <img src="/assets/card-hokm.webp" alt="حکم" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
             <div style={{ "position": "absolute", "inset": "auto 0 0 0", "padding": "16px", "background": "linear-gradient(to top,rgba(30,14,10,0.92),rgba(30,14,10,0))" }}>
               <h3 style={{ "fontSize": "22px", "fontWeight": "800", "color": "#f3d391", "margin": "0", "textAlign": "center" }}>حکم</h3>
             </div>
@@ -53,7 +53,7 @@ export default function HomeContent() {
 
         <div style={{ "width": "244px", "height": "342px", "position": "relative", "transformStyle": "preserve-3d", "transition": "transform 0.65s cubic-bezier(0.2,0.7,0.25,1)", "cursor": "pointer" }} className="hv1">
           <div style={{ "position": "absolute", "inset": "0", "backfaceVisibility": "hidden", "borderRadius": "16px", "overflow": "hidden", "border": "1px solid rgba(232,193,105,0.28)", "boxShadow": "0 14px 38px rgba(0,0,0,0.45)" }}>
-            <img src="/assets/card-shelem.jpg" alt="شلم" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
+            <img src="/assets/card-shelem.webp" alt="شلم" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
             <div style={{ "position": "absolute", "inset": "auto 0 0 0", "padding": "16px", "background": "linear-gradient(to top,rgba(30,14,10,0.92),rgba(30,14,10,0))" }}>
               <h3 style={{ "fontSize": "22px", "fontWeight": "800", "color": "#f3d391", "margin": "0", "textAlign": "center" }}>شلم</h3>
             </div>
@@ -67,7 +67,7 @@ export default function HomeContent() {
 
         <div style={{ "width": "244px", "height": "342px", "position": "relative", "transformStyle": "preserve-3d", "transition": "transform 0.65s cubic-bezier(0.2,0.7,0.25,1)", "cursor": "pointer" }} className="hv1">
           <div style={{ "position": "absolute", "inset": "0", "backfaceVisibility": "hidden", "borderRadius": "16px", "overflow": "hidden", "border": "1px solid rgba(232,193,105,0.28)", "boxShadow": "0 14px 38px rgba(0,0,0,0.45)" }}>
-            <img src="/assets/card-bebe.jpg" alt="بی‌بی‌سلام" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
+            <img src="/assets/card-bebe.webp" alt="بی‌بی‌سلام" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
             <div style={{ "position": "absolute", "inset": "auto 0 0 0", "padding": "16px", "background": "linear-gradient(to top,rgba(30,14,10,0.92),rgba(30,14,10,0))" }}>
               <h3 style={{ "fontSize": "22px", "fontWeight": "800", "color": "#f3d391", "margin": "0", "textAlign": "center" }}>بی‌بی‌سلام</h3>
             </div>
@@ -81,7 +81,7 @@ export default function HomeContent() {
 
         <div style={{ "width": "244px", "height": "342px", "position": "relative", "transformStyle": "preserve-3d", "transition": "transform 0.65s cubic-bezier(0.2,0.7,0.25,1)", "cursor": "pointer" }} className="hv1">
           <div style={{ "position": "absolute", "inset": "0", "backfaceVisibility": "hidden", "borderRadius": "16px", "overflow": "hidden", "border": "1px solid rgba(232,193,105,0.28)", "boxShadow": "0 14px 38px rgba(0,0,0,0.45)" }}>
-            <img src="/assets/shah-abbasi.jpg" alt="گنجفه" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
+            <img src="/assets/shah-abbasi.webp" alt="گنجفه" style={{ "width": "100%", "height": "100%", "objectFit": "cover", "display": "block" }} />
             <div style={{ "position": "absolute", "inset": "auto 0 0 0", "padding": "16px", "background": "linear-gradient(to top,rgba(30,14,10,0.92),rgba(30,14,10,0))" }}>
               <h3 style={{ "fontSize": "22px", "fontWeight": "800", "color": "#f3d391", "margin": "0", "textAlign": "center" }}>گنجفه</h3>
             </div>
@@ -98,7 +98,7 @@ export default function HomeContent() {
       </div>
     </section>
 
-    <div style={{ "backgroundImage": "linear-gradient(rgba(24,6,5,0.72), rgba(24,6,5,0.72)), url('/assets/home-carpet-bg.jpg')", "backgroundSize": "cover", "backgroundPosition": "center" }}>
+    <div style={{ "backgroundImage": "linear-gradient(rgba(24,6,5,0.72), rgba(24,6,5,0.72)), url('/assets/home-carpet-bg.webp')", "backgroundSize": "cover", "backgroundPosition": "center" }}>
     <section style={{ "position": "relative", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>
       <div style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(36px,5vw,56px) clamp(16px,4vw,24px)" }}>
       <h2 style={{ "fontSize": "clamp(23px,4.4vw,32px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 28px" }}>چرا اینجا</h2>
@@ -160,7 +160,7 @@ export default function HomeContent() {
     </section>
 
     <section style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px) clamp(36px,5vw,56px)" }}>
-      <div style={{ "backgroundImage": "linear-gradient(270deg,rgba(30,12,10,0.86) 0%,rgba(30,12,10,0.7) 50%,rgba(30,12,10,0.35) 100%),url('/assets/birad-banner.jpg')", "backgroundSize": "cover", "backgroundPosition": "left center", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "clamp(24px,4vw,38px) clamp(20px,3.5vw,34px)", "minHeight": "190px", "display": "flex", "gap": "22px", "alignItems": "flex-start", "flexWrap": "wrap" }}>
+      <div style={{ "backgroundImage": "linear-gradient(270deg,rgba(30,12,10,0.86) 0%,rgba(30,12,10,0.7) 50%,rgba(30,12,10,0.35) 100%),url('/assets/birad-banner.webp')", "backgroundSize": "cover", "backgroundPosition": "left center", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "clamp(24px,4vw,38px) clamp(20px,3.5vw,34px)", "minHeight": "190px", "display": "flex", "gap": "22px", "alignItems": "flex-start", "flexWrap": "wrap" }}>
         <span style={{ "fontSize": "30px", "lineHeight": "1" }}>🎴</span>
         <div style={{ "flex": "1", "minWidth": "260px" }}>
           <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 10px" }}>با استودیو بازی‌سازی بیراد آشنا شوید</h3>
