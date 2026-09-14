@@ -18,7 +18,7 @@ const ContactContent = lazy(() => import('./pages/generated/ContactContent.jsx')
 
 function Layout({ children }) {
   return (
-    <div dir="rtl" style={{ minHeight: '100vh', color: '#e6d5b8', fontFamily: 'Vazirmatn, system-ui, sans-serif' }}>
+    <div dir="rtl" style={{ minHeight: '100vh', color: '#e6d5b8', fontFamily: 'Shabnam, system-ui, sans-serif' }}>
       <Header />
       {children}
       <Footer />

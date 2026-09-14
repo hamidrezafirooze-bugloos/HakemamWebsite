@@ -90,7 +90,7 @@ export default function Header() {
             border: 'none',
             cursor: 'pointer',
             padding: 0,
-            fontFamily: 'Vazirmatn, system-ui, sans-serif',
+            fontFamily: 'Shabnam, system-ui, sans-serif',
             fontWeight: 700,
             fontSize: '23px',
             color: '#f0cf84',
@@ -228,7 +228,7 @@ export default function Header() {
                 fontSize: '13px',
                 padding: '5px 14px',
                 borderRadius: '999px',
-                fontFamily: 'Vazirmatn, system-ui, sans-serif',
+                fontFamily: 'Shabnam, system-ui, sans-serif',
               }}
             >
               English
@@ -318,7 +318,7 @@ export default function Header() {
                 fontSize: '13px',
                 padding: '6px 15px',
                 borderRadius: '999px',
-                fontFamily: 'Vazirmatn, system-ui, sans-serif',
+                fontFamily: 'Shabnam, system-ui, sans-serif',
               }}
             >
               English

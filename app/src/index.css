@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font-family: Vazirmatn, system-ui, sans-serif;
+  font-family: Shabnam, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   background: radial-gradient(120% 80% at 50% 0%, #4a1614 0%, #300e0d 45%, #200807 100%);
   color: #e6d5b8;
-  font-family: Vazirmatn, system-ui, sans-serif;
+  font-family: Shabnam, system-ui, sans-serif;
 }
 
 a {
