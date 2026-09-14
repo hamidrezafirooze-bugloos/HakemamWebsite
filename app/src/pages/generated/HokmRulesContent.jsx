@@ -1,20 +1,9 @@
 import { useGo } from '../../nav.jsx';
-import GoatWidget from '../../components/GoatWidget.jsx';
 
 export default function HokmRulesContent() {
   const go = useGo();
   return (
     <>
-      <GoatWidget
-        ariaLabel="بز کوهی"
-        patternUrl="/assets/goat-pattern-eslimi.png"
-        patternSize="40px auto"
-        heading="نماد بز در هنر ایرانی"
-        paragraphs={[
-          'بز کوهی یکی از کهن‌ترین نقش‌های هنر ایران است؛ از سفال‌های سیلک و شوش تا مفرغ‌های لرستان و نقش‌برجسته‌های هخامنشی روی سطح‌ها تکرار شده است.',
-          'شاخ‌های هلالی‌اش را با ماه و باران پیوند می‌دادند و بز را نشانه‌ی برکت، چابکی و باروری می‌دانستند. همین نقش قرن‌ها بعد هم در قالی‌های ایلیاتی و کاشی‌کاری ادامه یافت.',
-        ]}
-      />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
       <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-88px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/eslimi-transparent.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>

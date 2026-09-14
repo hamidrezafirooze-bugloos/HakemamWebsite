@@ -1,20 +1,9 @@
 import { useGo } from '../../nav.jsx';
-import GoatWidget from '../../components/GoatWidget.jsx';
 
 export default function ShelemRulesContent() {
   const go = useGo();
   return (
     <>
-      <GoatWidget
-        ariaLabel="بز کوهی با نقش بته جقه"
-        patternUrl="/assets/goat-pattern-boteh.webp"
-        patternSize="110px auto"
-        heading="بته جقه"
-        paragraphs={[
-          'طرحی که روی بدن بز می‌بینی بته جقه است؛ نقشی با انحنای سرکج که از دوره صفوی در ترمه، قلمکار و شال کرمان جا افتاد و بعدها در اروپا با نام پیزلی شناخته شد.',
-          'درباره‌ی ریشه‌اش روایت‌های مختلفی هست: شکل سرو خمیده به نشانه‌ی سرفرازی همراه با فروتنی، برگ نخل، یا شعله‌ی آتش زرتشتی. در همه‌ی این خوانش‌ها بته جقه نشانه‌ی زندگی و پایداری است.',
-        ]}
-      />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "padding": "clamp(44px,7vw,80px) 0 40px" }}>
       <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین شلم</p>
