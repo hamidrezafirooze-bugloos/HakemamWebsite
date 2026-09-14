@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useGo } from '../../nav.jsx';
-import VideoWatermark from '../../components/VideoWatermark.jsx';
+import GoatWidget from '../../components/GoatWidget.jsx';
 import RuleSuggestionModal from '../../components/RuleSuggestionModal.jsx';
 
 export default function BebeRulesContent() {
@@ -9,10 +9,20 @@ export default function BebeRulesContent() {
   return (
     <>
       <RuleSuggestionModal open={ruleFormOpen} onClose={() => setRuleFormOpen(false)} title="پیشنهاد قانون بی‌بی‌سلام" />
+      <GoatWidget
+        ariaLabel="بز کوهی با نقش گل شاه‌عباسی"
+        patternUrl="/assets/shah-abbasi.webp"
+        patternSize="auto 300px"
+        patternPosition="center 42%"
+        heading="گل شاه عباسی"
+        paragraphs={[
+          'نقش روی بدن بز گل شاه‌عباسی است؛ گلی چندپَر و آرمانی که نامش را از دوره شاه عباس صفوی گرفته و ستون اصلی طرح‌های اسلیمی در قالی، کاشی و تذهیب ایرانی است.',
+          'این گل کپی هیچ گل طبیعی نیست؛ ترکیبی ساخته‌شده از نیلوفر، انار و پیچک که در قالی‌های اصفهان و کاشان کنار بندهای اسلیمی می‌نشیند و نقش‌مایه‌های دیگر گرد آن سازمان می‌گیرند.',
+        ]}
+      />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
-    <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
-      <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-48px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/bebe-lady-still.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "WebkitMaskImage": "radial-gradient(circle, black 55%, transparent 100%)", "maskImage": "radial-gradient(circle, black 55%, transparent 100%)", "pointerEvents": "none" }}></div>
-      <p style={{ "position": "relative", "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین بی‌بی سلام</p>
+    <section style={{ "padding": "clamp(44px,7vw,80px) 0 40px" }}>
+      <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین بی‌بی سلام</p>
       <h1 style={{ "fontSize": "clamp(27px,5.8vw,46px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.32", "margin": "0 0 26px", "letterSpacing": "-0.015em", "textWrap": "pretty" }}>آموزش بازی بی‌بی سلام</h1>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>بی‌بی سلام هیچ شباهتی به حکم و شلم ندارد — و همین جذابش می‌کند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>اینجا خبری از حکم، تیم، امتیاز و فکر کردن نیست. کارت‌ها یکی‌یکی وسط می‌آیند و شما فقط باید زودتر از بقیه واکنش نشان بدهید. آس آمد؟ دست روی کارت. بی‌بی آمد؟ بگویید «بی‌بی سلام». دیر بجنبید، همه‌ی کارت‌های وسط مال شماست.</p>
@@ -144,12 +154,11 @@ export default function BebeRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <div style={{ "position": "relative", "overflow": "hidden", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px" }}>
+      <div style={{ "position": "relative", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px" }}>
         <div aria-hidden="true" style={{ "position": "absolute", "top": "14px", "right": "14px", "width": "26px", "height": "26px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
         <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
-        <VideoWatermark src="/assets/bebe-lady-watermark" style={{ bottom: '-10px', left: '10px', width: '220px', height: '220px', opacity: 0.22, transform: 'scaleX(-1)', WebkitMaskImage: 'radial-gradient(circle, black 55%, transparent 100%)', maskImage: 'radial-gradient(circle, black 55%, transparent 100%)' }} />
-        <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 16px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>در جمع شما چطور بازی می‌شود؟</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
-        <p style={{ "position": "relative", "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px", "textWrap": "pretty" }}>واکنش‌های بی‌بی سلام تقریباً در هر خانواده فرق دارد. اگر جمع شما واکنشی دارد که اینجا نیامده، برایمان بنویسید — قاعده‌های تأییدشده را با نام شهر یا جمعی که فرستاده اضافه می‌کنیم.</p>
+        <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 16px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>در جمع شما چطور بازی می‌شود؟</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
+        <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px", "textWrap": "pretty" }}>واکنش‌های بی‌بی سلام تقریباً در هر خانواده فرق دارد. اگر جمع شما واکنشی دارد که اینجا نیامده، برایمان بنویسید — قاعده‌های تأییدشده را با نام شهر یا جمعی که فرستاده اضافه می‌کنیم.</p>
       <button onClick={() => setRuleFormOpen(true)} style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
       </div>
     </section>
