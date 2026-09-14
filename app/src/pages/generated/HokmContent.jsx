@@ -13,10 +13,10 @@ export default function HokmContent() {
     <div style={{ "position": "relative", "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(48px,7vw,88px) clamp(16px,4vw,24px) clamp(36px,5vw,56px)" }}>
       <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 22px" }}>بازی حکم آنلاین</p>
       <h1 style={{ "fontSize": "clamp(30px,7vw,56px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.28", "margin": "0 0 22px", "maxWidth": "800px", "letterSpacing": "-0.015em", "textWrap": "pretty" }}>حکم، همین حالا، با همان سه نفر</h1>
-      <p style={{ "fontSize": "clamp(17px,2.5vw,21px)", "color": "#d8c2a4", "lineHeight": "1.85", "margin": "0 0 38px", "maxWidth": "640px", "textWrap": "pretty" }}>اتاق بساز، لینکش را بفرست، بازی شروع می‌شود. بدون نصب، بدون ثبت‌نام.</p>
+      <p style={{ "fontSize": "clamp(17px,2.5vw,21px)", "color": "#d8c2a4", "lineHeight": "1.85", "margin": "0 0 38px", "maxWidth": "640px", "textWrap": "pretty" }}>اتاق بساز، لینکش رو بفرست، بازی شروع میشه. بدون نصب، بدون ثبت‌نام.</p>
       <div style={{ "display": "flex", "gap": "14px", "flexWrap": "wrap", "alignItems": "center" }}>
         <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "18px", "padding": "17px 38px", "borderRadius": "11px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "boxShadow": "0 6px 24px rgba(216,174,68,0.18)", "textDecoration": "none", "display": "inline-block" }}>شروع بازی</a>
-        <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "16px", "padding": "16px 28px", "borderRadius": "11px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>اتاق بساز و رفقا را دعوت کن</a>
+        <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "16px", "padding": "16px 28px", "borderRadius": "11px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>اتاق بساز و رفقا رو دعوت کن</a>
       </div>
       <div style={{ "marginTop": "36px", "display": "flex", "gap": "16px", "alignItems": "center", "flexWrap": "wrap", "background": "rgba(14,3,3,0.4)", "border": "1px solid rgba(232,193,105,0.42)", "borderRadius": "14px", "padding": "18px 22px", "width": "fit-content", "boxShadow": "0 18px 40px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,238,214,0.07)", "backdropFilter": "blur(6px)" }}>
         <span style={{ "fontSize": "16px", "color": "#d8c2a4" }}>کد اتاق داری؟</span>
@@ -36,12 +36,12 @@ export default function HokmContent() {
       <h2 style={{ "fontSize": "clamp(23px,4.4vw,32px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 28px" }}>دو دلیل که اینجا بازی کنی</h2>
       <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(min(320px,100%),1fr))", "gap": "18px" }}>
         <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-1.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
-          <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>رتبه‌ای که واقعاً معنا دارد</h3>
-          <p style={{ "fontSize": "16px", "color": "#FFF3E2", "lineHeight": "1.95", "margin": "0" }}>همه می‌گویند حکم‌باز خوبی هستند. اینجا معلوم می‌شود. بعد از هر بازی، کیفیت تصمیم‌هایت سنجیده می‌شود — نه فقط اینکه بردی یا باختی، چون در حکم شانس هم نقش دارد. رتبه‌ی شخصی خودت را داری، و یک رتبه‌ی جداگانه با هر کسی که با او یار می‌شوی.</p>
+          <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>رتبه‌ای که واقعاً معنا داره</h3>
+          <p style={{ "fontSize": "16px", "color": "#FFF3E2", "lineHeight": "1.95", "margin": "0" }}>همه میگن حکم‌باز خوبی هستن. اینجا معلوم میشه. بعد از هر بازی، کیفیت تصمیم‌هات سنجیده میشه — نه فقط اینکه بردی یا باختی، چون در حکم شانس هم نقش داره. رتبه‌ی شخصی خودت رو داری، و یک رتبه‌ی جداگانه با هر کسی که باهاش یار میشی.</p>
         </div>
         <div style={{ "backgroundImage": "linear-gradient(rgba(20,6,5,0.44),rgba(20,6,5,0.45)),url('/assets/hokm-reason-2.webp')", "backgroundSize": "cover", "backgroundPosition": "center", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "16px", "padding": "28px" }}>
-          <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>حریفی که کارت می‌شمارد</h3>
-          <p style={{ "fontSize": "16px", "lineHeight": "1.95", "margin": "0", "color": "#FFF3E2" }}>اگر کسی دم دستت نیست، با حریفی بازی می‌کنی که مثل یک بازیکن قوی فکر می‌کند — کارت‌های رفته را می‌شمارد، از کارت‌های تو حدس می‌زند، و به این راحتی‌ها نمی‌بازد. برای تمرین بین دورهمی‌ها.</p>
+          <h3 style={{ "fontSize": "clamp(17px,2.5vw,21px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>حریفی که کارت می‌شمره</h3>
+          <p style={{ "fontSize": "16px", "lineHeight": "1.95", "margin": "0", "color": "#FFF3E2" }}>اگر کسی دم دستت نیست، با حریفی بازی می‌کنی که مثل یک بازیکن قوی فکر می‌کنه — کارت‌های رفته رو می‌شمره، از کارت‌های تو حدس می‌زنه، و به این راحتی‌ها نمی‌بازه. برای تمرین بین دورهمی‌ها.</p>
         </div>
       </div>
     </section>
@@ -56,11 +56,11 @@ export default function HokmContent() {
         </div>
         <div style={{ "background": "rgba(16,4,4,0.72)", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "14px", "padding": "24px", "opacity": "0", "animation": "stepRise 0.75s cubic-bezier(0.2,0.75,0.25,1) 0.16s both, stepGlow 4.5s ease-in-out 1.80s infinite", "transition": "transform 0.35s cubic-bezier(0.2,0.75,0.25,1),border-color 0.35s,background 0.35s" }} className="hv1">
           <p style={{ "fontSize": "15px", "fontWeight": "800", "color": "#d8ae44", "margin": "0 0 10px", "display": "inline-block", "animation": "stepNum 0.5s cubic-bezier(0.2,1.4,0.4,1) 0.40s both" }}>۲</p>
-          <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}>لینک را بفرست — در تلگرام یا واتساپ برای سه نفر دیگر.</p>
+          <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}>لینک رو بفرست — در تلگرام یا واتساپ برای سه نفر دیگر.</p>
         </div>
         <div style={{ "background": "rgba(16,4,4,0.72)", "border": "1px solid rgba(232,193,105,0.32)", "borderRadius": "14px", "padding": "24px", "opacity": "0", "animation": "stepRise 0.75s cubic-bezier(0.2,0.75,0.25,1) 0.24s both, stepGlow 4.5s ease-in-out 2.20s infinite", "transition": "transform 0.35s cubic-bezier(0.2,0.75,0.25,1),border-color 0.35s,background 0.35s" }} className="hv1">
           <p style={{ "fontSize": "15px", "fontWeight": "800", "color": "#d8ae44", "margin": "0 0 10px", "display": "inline-block", "animation": "stepNum 0.5s cubic-bezier(0.2,1.4,0.4,1) 0.48s both" }}>۳</p>
-          <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}>بازی کن — به محض اینکه چهار نفر شدید، میز شروع می‌شود.</p>
+          <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}>بازی کن — به محض اینکه چهار نفر شدید، میز شروع میشه.</p>
         </div>
       </div>
       <div style={{ "marginTop": "24px", "display": "flex", "gap": "14px", "alignItems": "center", "flexWrap": "wrap" }}>
@@ -79,8 +79,8 @@ export default function HokmContent() {
     </section>
 
     <section style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(36px,5vw,56px) clamp(16px,4vw,24px)", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 16px" }}>بلد نیستی یا سرِ قاعده‌ای بحث دارید؟</h2>
-      <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 20px", "maxWidth": "680px" }}>قوانین کامل حکم را نوشته‌ایم — از حاکم شدن تا کوت و حاکم‌کوت، به‌همراه تفاوت‌هایی که هر شهر و هر خانواده به شکل خودش بازی می‌کند.</p>
+      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 16px" }}>بلد نیستی یا سرِ قاعده‌ای بحث دارین؟</h2>
+      <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 20px", "maxWidth": "680px" }}>قوانین کامل حکم رو نوشتیم — از حاکم شدن تا کوت و حاکم‌کوت، به‌همراه تفاوت‌هایی که هر شهر و هر خانواده به شکل خودش بازی می‌کنه.</p>
       <a href="#" onClick={go.hokmRules} style={{ "fontSize": "17px", "fontWeight": "700" }}>قوانین کامل حکم →</a>
     </section>
 
@@ -99,7 +99,7 @@ export default function HokmContent() {
     <section style={{ "maxWidth": "1120px", "margin": "0 auto", "padding": "clamp(36px,5vw,56px) clamp(16px,4vw,24px) 0", "borderTop": "1px solid rgba(232,193,105,0.13)", "display": "flex", "gap": "32px", "alignItems": "flex-end", "flexWrap": "wrap" }}>
       <div style={{ "flex": "0 1 520px", "minWidth": "300px", "paddingBottom": "56px" }}>
       <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 16px" }}>روی موبایل هم هست</h2>
-      <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px", "maxWidth": "620px" }}>در مرورگر بازی کن، یا اپ را بگیر و روی گوشی‌ات داشته باش.</p>
+      <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px", "maxWidth": "620px" }}>در مرورگر بازی کن، یا اپ رو بگیر و روی گوشی‌ات داشته باش.</p>
       <a href="#" onClick={go.download} style={{ "fontSize": "16px", "fontWeight": "700" }}>دریافت برنامه →</a>
       </div>
       <img src="/assets/hokm-mobile.webp" alt="مرد قاجاری روی صندلی با گوشی در دست" style={{ "width": "min(420px,100%)", "height": "auto", "display": "block", "marginBottom": "0", "filter": "drop-shadow(0 -10px 30px rgba(0,0,0,0.45))" }} />
@@ -109,8 +109,8 @@ export default function HokmContent() {
       <h2 style={{ "fontSize": "clamp(23px,4.4vw,32px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 28px" }}>سؤالات متداول</h2>
       <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(min(320px,100%),1fr))", "gap": "26px" }}>
         <div>
-          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>بازی رایگان است؟</h3>
-          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بله. بازی کردن رایگان است و همیشه رایگان می‌ماند.</p>
+          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>بازی رایگانه؟</h3>
+          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بله. بازی کردن رایگانه و همیشه رایگان می‌مونه.</p>
         </div>
         <div>
           <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>باید ثبت‌نام کنم؟</h3>
@@ -118,19 +118,19 @@ export default function HokmContent() {
         </div>
         <div>
           <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>باید چیزی نصب کنم؟</h3>
-          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>نه. مستقیم در مرورگر باز می‌شود.</p>
+          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>نه. مستقیم در مرورگر باز میشه.</p>
         </div>
         <div>
-          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>چند نفر لازم است؟</h3>
-          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>حکم چهار نفره است. اگر چهار نفر نشدید، جای خالی با حریف هوشمند پر می‌شود.</p>
+          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>چند نفر لازمه؟</h3>
+          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>حکم چهار نفره‌ست. اگر چهار نفر نشدین، جای خالی با حریف هوشمند پر میشه.</p>
         </div>
         <div>
-          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>می‌توانم فقط با دوستان خودم بازی کنم؟</h3>
-          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بله. اتاق خصوصی بساز و کدش را فقط برای همان‌ها بفرست.</p>
+          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>می‌تونم فقط با دوستان خودم بازی کنم؟</h3>
+          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بله. اتاق خصوصی بساز و کدش رو فقط برای همون‌ها بفرست.</p>
         </div>
         <div>
-          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>رتبه چطور حساب می‌شود؟</h3>
-          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بر اساس کیفیت تصمیم‌هایت، نه فقط برد و باخت. علاوه بر رتبه‌ی شخصی، با هر یاری که با او بازی می‌کنی یک رتبه‌ی مشترک هم داری.</p>
+          <h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>رتبه چطور حساب میشه؟</h3>
+          <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>بر اساس کیفیت تصمیم‌هات، نه فقط برد و باخت. علاوه بر رتبه‌ی شخصی، با هر یاری که باهاش بازی می‌کنی یک رتبه‌ی مشترک هم داری.</p>
         </div>
       </div>
     </section>
