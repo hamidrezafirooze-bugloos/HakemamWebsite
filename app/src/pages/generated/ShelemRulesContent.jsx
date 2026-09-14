@@ -18,7 +18,7 @@ export default function ShelemRulesContent() {
     <div style={{ "position": "relative", "overflow": "hidden", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px", "marginBottom": "44px" }}>
       <div aria-hidden="true" style={{ "position": "absolute", "top": "14px", "right": "14px", "width": "26px", "height": "26px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
       <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
-      <GoatRunWatermark style={{ bottom: '20px', right: '-20px', width: '220px', height: '220px', opacity: 0.22, transform: 'scaleX(-1)' }} />
+      <GoatRunWatermark style={{ bottom: '-10px', right: '10px', width: '220px', height: '220px', opacity: 0.22, transform: 'scaleX(-1)' }} />
       <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "10px", "margin": "0 0 20px" }}>
         <span aria-hidden="true" style={{ "width": "14px", "height": "14px", "flex": "0 0 14px", "border": "1px solid rgba(232,193,105,0.6)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "3px", "background": "rgba(232,193,105,0.45)" }}></span></span>
         <h2 style={{ "fontSize": "15px", "fontWeight": "800", "letterSpacing": "0.1em", "color": "#d8ae44", "margin": "0" }}>در یک نگاه</h2>
