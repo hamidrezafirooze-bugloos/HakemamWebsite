@@ -71,7 +71,7 @@ export default function Footer() {
           paddingTop: '24px',
         }}
       >
-        <span style={{ fontFamily: 'Bitter,serif', fontSize: '16px', color: '#c9a469' }}>hakem.am</span>
+        <span style={{ fontFamily: 'Vazirmatn, system-ui, sans-serif', fontSize: '16px', color: '#c9a469' }}>hakem.am</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <a
             href="https://instagram.com/"

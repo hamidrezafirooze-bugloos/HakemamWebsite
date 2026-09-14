@@ -76,8 +76,8 @@ export default function DownloadContent() {
         <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px" }}>مایکت</span>
         <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px" }}>سیب‌اپ</span>
         <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px" }}>اناردونی</span>
-        <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px", "fontFamily": "Bitter,serif" }}>Google Play</span>
-        <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px", "fontFamily": "Bitter,serif" }}>App Store</span>
+        <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px", "fontFamily": "Vazirmatn, system-ui, sans-serif" }}>Google Play</span>
+        <span style={{ "border": "1px solid rgba(232,193,105,0.3)", "color": "#c9a469", "fontSize": "14px", "fontWeight": "600", "padding": "9px 18px", "borderRadius": "999px", "fontFamily": "Vazirmatn, system-ui, sans-serif" }}>App Store</span>
       </div>
     </section>
 
