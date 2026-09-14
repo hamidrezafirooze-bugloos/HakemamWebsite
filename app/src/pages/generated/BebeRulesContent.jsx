@@ -30,7 +30,7 @@ export default function BebeRulesContent() {
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>سختی یادگیری:</span> خیلی آسان — واقعاً سه دقیقه</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>مناسب برای:</span> جمع خانوادگی، بچه‌های بالای ۸ سال، کسی که تا حالا ورق بازی نکرده</p>
       </div>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>همین حالا بی‌بی سلام بازی کن</button>
+      <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>همین حالا بی‌بی سلام بازی کن</a>
     </div>
 
     <section style={{ "padding": "0 0 44px" }}>

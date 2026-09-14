@@ -138,7 +138,7 @@ export default function HomeContent() {
       </div>
       <div style={{ "marginTop": "24px", "display": "flex", "gap": "14px", "alignItems": "center", "flexWrap": "wrap" }}>
         <span style={{ "fontSize": "16px", "color": "#cdb797" }}>سه نفر دم دست نیست؟</span>
-        <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "16px", "padding": "14px 26px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>شروع فوری با حریف هوشمند</button>
+        <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "16px", "padding": "14px 26px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>شروع فوری با حریف هوشمند</a>
       </div>
       </div>
     </section>

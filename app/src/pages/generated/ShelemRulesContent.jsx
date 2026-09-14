@@ -32,7 +32,7 @@ export default function ShelemRulesContent() {
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>مدت یک بازی کامل:</span> حدود ۳۰ تا ۴۵ دقیقه</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>سختی یادگیری:</span> متوسط — قوانین ساده، تصمیم‌ها سخت</p>
       </div>
-      <button style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>همین حالا شلم بازی کن</button>
+      <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>همین حالا شلم بازی کن</a>
     </div>
 
     <section style={{ "padding": "0 0 44px" }}>
@@ -174,7 +174,7 @@ export default function ShelemRulesContent() {
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 26px", "textWrap": "pretty" }}>بعضی جمع‌ها «اعلام شلم» هم دارند: حاکم پیش از شروع می‌گوید قصد دارد همه‌ی دست‌ها را ببرد. اگر موفق شود امتیاز بیشتری می‌گیرد، اگر حتی یک دست ببازد، جریمه‌ی سنگین‌تری می‌شود.</p>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>پایان بازی</h3>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 24px", "textWrap": "pretty" }}>بازی تا رسیدن یک تیم به امتیاز هدف ادامه دارد. رایج‌ترین عدد ۱۱۰۰ است، ولی جمع‌های مختلف ۱۱۶۵، ۱۴۰۰ یا ۱۶۵۰ هم بازی می‌کنند.</p>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>یک دست شلم بازی کن</button>
+      <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>یک دست شلم بازی کن</a>
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>

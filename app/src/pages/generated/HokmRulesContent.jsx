@@ -28,7 +28,7 @@ export default function HokmRulesContent() {
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>هدف بازی:</span> رسیدن به ۷ امتیاز</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>مدت:</span> حدود ۱۰ تا ۱۵ دقیقه برای هر دست</p>
       </div>
-      <button style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>همین حالا یک دست بازی کن — بدون نصب</button>
+      <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>همین حالا یک دست بازی کن — بدون نصب</a>
     </div>
 
     <section style={{ "padding": "0 0 44px" }}>
@@ -128,7 +128,7 @@ export default function HokmRulesContent() {
         </div>
       </div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 28px" }}>یعنی حاکم بودن یک امتیاز است که با بردن حفظ می‌شود.</p>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>بازی کن و ببین چقدر خوب بلدی</button>
+      <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>بازی کن و ببین چقدر خوب بلدی</a>
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
