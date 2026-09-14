@@ -1,8 +1,19 @@
+import { useRef, useState } from 'react';
 import { useGo } from '../../nav.jsx';
 
+const SUBJECTS = ['مشکل فنی', 'گزارش تخلف', 'همکاری', 'تجاری', 'رسانه', 'سایر'];
 
 export default function ContactContent() {
   const go = useGo();
+  const [subject, setSubject] = useState(SUBJECTS[0]);
+  const formRef = useRef(null);
+
+  const goToForm = (chosenSubject) => (e) => {
+    e.preventDefault();
+    setSubject(chosenSubject);
+    formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <>
       <main style={{ "maxWidth": "920px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
@@ -26,44 +37,39 @@ export default function ContactContent() {
             <li>تاریخ تقریبی بازی</li>
             <li>توضیح کوتاهی از آنچه اتفاق افتاده</li>
           </ul>
-          <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>گزارش تخلف</button>
+          <button onClick={goToForm('گزارش تخلف')} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>گزارش تخلف</button>
         </div>
         <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "14px", "padding": "26px" }}>
           <h3 style={{ "fontSize": "clamp(16px,2.2vw,19px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 12px" }}>می‌خواهید با ما کار کنید؟</h3>
           <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 12px" }}>اگر بازی‌ساز، طراح، نوازنده، صداپیشه یا پژوهشگر تاریخ و فرهنگ ایران هستید و این کار برایتان جالب است، خوشحال می‌شویم بشناسیمتان.</p>
           <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px" }}>لازم نیست رزومه‌ی رسمی بفرستید — بنویسید چه کاری بلدید و چه چیزی از این پروژه برایتان جذاب بوده.</p>
-          <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام همکاری</button>
+          <button onClick={goToForm('همکاری')} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام همکاری</button>
         </div>
         <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "14px", "padding": "26px" }}>
           <h3 style={{ "fontSize": "clamp(16px,2.2vw,19px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 12px" }}>کسب‌وکار و همکاری تجاری</h3>
           <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px" }}>اگر برند یا شرکتی هستید که روی همین فرهنگ کار می‌کند، یا پیشنهاد همکاری و اسپانسری دارید، بنویسید.</p>
-          <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام تجاری</button>
+          <button onClick={goToForm('تجاری')} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام تجاری</button>
         </div>
         <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "14px", "padding": "26px" }}>
           <h3 style={{ "fontSize": "clamp(16px,2.2vw,19px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 12px" }}>رسانه</h3>
           <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px" }}>برای مصاحبه، گزارش یا دریافت مواد رسانه‌ای — تصاویر، لوگو، اطلاعات پایه — تماس بگیرید.</p>
-          <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام رسانه</button>
+          <button onClick={goToForm('رسانه')} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام رسانه</button>
         </div>
         <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "14px", "padding": "26px" }}>
           <h3 style={{ "fontSize": "clamp(16px,2.2vw,19px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 12px" }}>هر حرف دیگری</h3>
           <p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0 0 18px" }}>اگر بازی کرده‌اید و نظری دارید — چه تعریف، چه انتقاد، چه پیشنهاد یک بازی ورق ایرانی دیگر — همان‌قدر برایمان ارزش دارد.</p>
-          <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام عمومی</button>
+          <button onClick={goToForm('سایر')} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "12px 22px", "borderRadius": "9px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>پیام عمومی</button>
         </div>
       </div>
     </section>
 
-    <section style={{ "padding": "44px 0 56px", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>
+    <section ref={formRef} style={{ "padding": "44px 0 56px", "borderTop": "1px solid rgba(232,193,105,0.13)" }}>
       <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 24px" }}>فرم تماس</h2>
       <div style={{ "display": "grid", "gap": "20px", "maxWidth": "560px" }}>
         <label style={{ "display": "grid", "gap": "8px" }}>
           <span style={{ "fontSize": "15px", "fontWeight": "700", "color": "#f2ddb4" }}>موضوع</span>
-          <select style={{ "fontFamily": "inherit", "fontSize": "16px", "padding": "13px 14px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.3)", "background": "rgba(0,0,0,0.22)", "color": "#e6d5b8" }}>
-            <option>مشکل فنی</option>
-            <option>گزارش تخلف</option>
-            <option>همکاری</option>
-            <option>تجاری</option>
-            <option>رسانه</option>
-            <option>سایر</option>
+          <select value={subject} onChange={(e) => setSubject(e.target.value)} style={{ "fontFamily": "inherit", "fontSize": "16px", "padding": "13px 14px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.3)", "background": "rgba(0,0,0,0.22)", "color": "#e6d5b8" }}>
+            {SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </label>
         <label style={{ "display": "grid", "gap": "8px" }}>
