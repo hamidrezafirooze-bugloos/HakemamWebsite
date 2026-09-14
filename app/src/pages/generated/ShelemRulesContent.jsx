@@ -1,37 +1,28 @@
 import { useGo } from '../../nav.jsx';
-import GoatWidget from '../../components/GoatWidget.jsx';
 
 export default function ShelemRulesContent() {
   const go = useGo();
   return (
     <>
-      <GoatWidget
-        ariaLabel="بز کوهی با نقش بته جقه"
-        patternUrl="/assets/goat-pattern-boteh.webp"
-        patternSize="110px auto"
-        heading="بته جقه"
-        paragraphs={[
-          'طرحی که روی بدن بز می‌بینی بته جقه است؛ نقشی با انحنای سرکج که از دوره صفوی در ترمه، قلمکار و شال کرمان جا افتاد و بعدها در اروپا با نام پیزلی شناخته شد.',
-          'درباره‌ی ریشه‌اش روایت‌های مختلفی هست: شکل سرو خمیده به نشانه‌ی سرفرازی همراه با فروتنی، برگ نخل، یا شعله‌ی آتش زرتشتی. در همه‌ی این خوانش‌ها بته جقه نشانه‌ی زندگی و پایداری است.',
-        ]}
-      />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
-    <section style={{ "padding": "clamp(44px,7vw,80px) 0 40px" }}>
-      <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین شلم</p>
+    <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
+      <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-88px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/goat-watermark.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
+      <p style={{ "position": "relative", "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین شلم</p>
       <h1 style={{ "fontSize": "clamp(27px,5.8vw,46px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.32", "margin": "0 0 26px", "letterSpacing": "-0.015em", "textWrap": "pretty" }}>آموزش بازی شلم</h1>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>شلم بازی ورقِ چهارنفره‌ی دو به دویی است که در آن، برخلاف حکم، فقط تعداد دست‌ها مهم نیست — ارزش کارت‌هایی که جمع می‌کنید مهم است. و پیش از شروع باید بگویید چند امتیاز می‌آورید. اگر بیاورید، برنده‌اید. اگر نیاورید، همان عدد از شما کم می‌شود.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>همین یک قاعده، شلم را از یک بازی مهارتی به یک بازی مهارت و شهامت تبدیل می‌کند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 0px", "textWrap": "pretty" }}>اگر حکم بلدید، شلم را در ده دقیقه یاد می‌گیرید. اگر نه، این صفحه از صفر شروع می‌کند.</p>
     </section>
 
-    <div style={{ "position": "relative", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px", "marginBottom": "44px" }}>
+    <div style={{ "position": "relative", "overflow": "hidden", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px", "marginBottom": "44px" }}>
       <div aria-hidden="true" style={{ "position": "absolute", "top": "14px", "right": "14px", "width": "26px", "height": "26px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
       <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
-      <div style={{ "display": "flex", "alignItems": "center", "gap": "10px", "margin": "0 0 20px" }}>
+      <div aria-hidden="true" style={{ "position": "absolute", "bottom": "-70px", "right": "-70px", "width": "220px", "height": "220px", "opacity": "0.22", "backgroundImage": "url('/assets/goat-watermark.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 140s linear infinite reverse", "pointerEvents": "none" }}></div>
+      <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "10px", "margin": "0 0 20px" }}>
         <span aria-hidden="true" style={{ "width": "14px", "height": "14px", "flex": "0 0 14px", "border": "1px solid rgba(232,193,105,0.6)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "3px", "background": "rgba(232,193,105,0.45)" }}></span></span>
         <h2 style={{ "fontSize": "15px", "fontWeight": "800", "letterSpacing": "0.1em", "color": "#d8ae44", "margin": "0" }}>در یک نگاه</h2>
       </div>
-      <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(220px,1fr))", "gap": "18px 26px", "marginBottom": "24px" }}>
+      <div style={{ "position": "relative", "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(220px,1fr))", "gap": "18px 26px", "marginBottom": "24px" }}>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>بازیکن‌ها:</span> ۴ نفر، دو تیم دو نفره‌ی روبه‌رو</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>کارت‌ها:</span> یک دست ورق کامل، ۵۲ برگ</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>کارت هر نفر:</span> ۱۲ برگ · ۴ برگ باقی‌مانده «زمین» می‌شود</p>
@@ -41,7 +32,7 @@ export default function ShelemRulesContent() {
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>مدت یک بازی کامل:</span> حدود ۳۰ تا ۴۵ دقیقه</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>سختی یادگیری:</span> متوسط — قوانین ساده، تصمیم‌ها سخت</p>
       </div>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>همین حالا شلم بازی کن</button>
+      <button style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>همین حالا شلم بازی کن</button>
     </div>
 
     <section style={{ "padding": "0 0 44px" }}>
