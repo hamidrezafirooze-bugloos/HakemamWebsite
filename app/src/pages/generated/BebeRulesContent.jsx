@@ -7,7 +7,7 @@ export default function BebeRulesContent() {
     <>
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
-      <VideoWatermark src="/assets/bebe-lady-watermark" style={{ top: '-46px', left: '-48px', width: '320px', height: '320px', opacity: 0.35, WebkitMaskImage: 'radial-gradient(circle, black 55%, transparent 100%)', maskImage: 'radial-gradient(circle, black 55%, transparent 100%)' }} />
+      <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-48px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/bebe-lady-still.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "WebkitMaskImage": "radial-gradient(circle, black 55%, transparent 100%)", "maskImage": "radial-gradient(circle, black 55%, transparent 100%)", "pointerEvents": "none" }}></div>
       <p style={{ "position": "relative", "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین بی‌بی سلام</p>
       <h1 style={{ "fontSize": "clamp(27px,5.8vw,46px)", "fontWeight": "900", "color": "#f3d391", "lineHeight": "1.32", "margin": "0 0 26px", "letterSpacing": "-0.015em", "textWrap": "pretty" }}>آموزش بازی بی‌بی سلام</h1>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>بی‌بی سلام هیچ شباهتی به حکم و شلم ندارد — و همین جذابش می‌کند.</p>
