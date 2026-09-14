@@ -1,9 +1,20 @@
 import { useGo } from '../../nav.jsx';
+import GoatWidget from '../../components/GoatWidget.jsx';
 
 export default function ShelemRulesContent() {
   const go = useGo();
   return (
     <>
+      <GoatWidget
+        ariaLabel="بز کوهی با نقش بته جقه"
+        patternUrl="/assets/goat-pattern-boteh.webp"
+        patternSize="110px auto"
+        heading="بته جقه"
+        paragraphs={[
+          'طرحی که روی بدن بز می‌بینی بته جقه است؛ نقشی با انحنای سرکج که از دوره صفوی در ترمه، قلمکار و شال کرمان جا افتاد و بعدها در اروپا با نام پیزلی شناخته شد.',
+          'درباره‌ی ریشه‌اش روایت‌های مختلفی هست: شکل سرو خمیده به نشانه‌ی سرفرازی همراه با فروتنی، برگ نخل، یا شعله‌ی آتش زرتشتی. در همه‌ی این خوانش‌ها بته جقه نشانه‌ی زندگی و پایداری است.',
+        ]}
+      />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "padding": "clamp(44px,7vw,80px) 0 40px" }}>
       <p style={{ "fontSize": "14px", "fontWeight": "700", "letterSpacing": "0.14em", "color": "#b8905a", "margin": "0 0 20px" }}>قوانین شلم</p>
@@ -13,8 +24,13 @@ export default function ShelemRulesContent() {
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 0px", "textWrap": "pretty" }}>اگر حکم بلدید، شلم را در ده دقیقه یاد می‌گیرید. اگر نه، این صفحه از صفر شروع می‌کند.</p>
     </section>
 
-    <div style={{ "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px", "marginBottom": "44px" }}>
-      <h2 style={{ "fontSize": "15px", "fontWeight": "800", "letterSpacing": "0.1em", "color": "#d8ae44", "margin": "0 0 20px" }}>در یک نگاه</h2>
+    <div style={{ "position": "relative", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px", "marginBottom": "44px" }}>
+      <div aria-hidden="true" style={{ "position": "absolute", "top": "14px", "right": "14px", "width": "26px", "height": "26px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
+      <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "10px", "margin": "0 0 20px" }}>
+        <span aria-hidden="true" style={{ "width": "14px", "height": "14px", "flex": "0 0 14px", "border": "1px solid rgba(232,193,105,0.6)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "3px", "background": "rgba(232,193,105,0.45)" }}></span></span>
+        <h2 style={{ "fontSize": "15px", "fontWeight": "800", "letterSpacing": "0.1em", "color": "#d8ae44", "margin": "0" }}>در یک نگاه</h2>
+      </div>
       <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit,minmax(220px,1fr))", "gap": "18px 26px", "marginBottom": "24px" }}>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>بازیکن‌ها:</span> ۴ نفر، دو تیم دو نفره‌ی روبه‌رو</p>
         <p style={{ "fontSize": "16px", "color": "#e6d5b8", "lineHeight": "1.8", "margin": "0" }}><span style={{ "color": "#b0907a" }}>کارت‌ها:</span> یک دست ورق کامل، ۵۲ برگ</p>
@@ -29,7 +45,7 @@ export default function ShelemRulesContent() {
     </div>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>چه چیزی لازم دارید</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>چه چیزی لازم دارید</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>چهار نفر.</strong> شلم دقیقاً چهار نفره است. سه‌نفره و پنج‌نفره‌ی جاافتاده ندارد.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>دو تیم.</strong> هر کس با نفر روبه‌رویش هم‌تیمی است. تیم‌ها روی میز یکی در میان می‌نشینند تا دو هم‌تیمی کنار هم نباشند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>یک دست ورق کامل.</strong> هر ۵۲ برگ. کارت‌ها را کنار نگذارید.</p>
@@ -37,7 +53,7 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>شروع بازی</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>شروع بازی</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>نشستن و تیم‌بندی</h3>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 26px", "textWrap": "pretty" }}>چهار نفر دور میز. هر کس هم‌تیمیِ نفر روبه‌رو است. جهت بازی در شلم معمولاً پادساعت‌گرد است (سمت راست دست‌دهنده اول بازی می‌کند)، ولی این در جمع‌های مختلف فرق دارد و تأثیری بر قواعد ندارد — فقط از اول توافق کنید.</p>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>پخش کارت</h3>
@@ -47,12 +63,24 @@ export default function ShelemRulesContent() {
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>حراج — قلب شلم</h3>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>حالا هر کس کارت‌هایش را نگاه می‌کند و تخمین می‌زند تیمش چند امتیاز از ۱۶۵ امتیازِ این دست می‌تواند جمع کند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>بعد نوبتی، هر کس یا عددی اعلام می‌کند یا پاس می‌دهد:</p>
-      <ul style={{ "margin": "0 0 18px", "paddingInlineStart": "22px", "fontSize": "17px", "color": "#cdb797", "lineHeight": "2.1" }}>
-        <li>کمترین عدد قابل اعلام: ۱۰۰</li>
-        <li>اعلام‌ها باید مضرب ۵ باشند: ۱۰۰، ۱۰۵، ۱۱۰، …</li>
-        <li>هر اعلام باید از اعلام قبلی بالاتر باشد</li>
-        <li>هرکس یک‌بار پاس بدهد، تا آخر آن دست از حراج بیرون است و دیگر نمی‌تواند برگردد</li>
-      </ul>
+      <div style={{ "display": "grid", "gap": "10px", "margin": "0 0 18px" }}>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}>کمترین عدد قابل اعلام: ۱۰۰</p>
+        </div>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}>اعلام‌ها باید مضرب ۵ باشند: ۱۰۰، ۱۰۵، ۱۱۰، …</p>
+        </div>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}>هر اعلام باید از اعلام قبلی بالاتر باشد</p>
+        </div>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}>هرکس یک‌بار پاس بدهد، تا آخر آن دست از حراج بیرون است و دیگر نمی‌تواند برگردد</p>
+        </div>
+      </div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>حراج وقتی تمام می‌شود که سه نفر پاس داده باشند. نفر باقی‌مانده حاکم آن دست است و تیمش قرارداد را قبول کرده: باید حداقل همان عددی که گفته امتیاز جمع کند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 26px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>اگر همه پاس بدهند چه می‌شود؟</strong> در بیشتر جمع‌ها کارت‌ها جمع می‌شود و همان دست‌دهنده دوباره پخش می‌کند. در بعضی جمع‌ها نفر آخر مجبور است ۱۰۰ اعلام کند.</p>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>زمین و دور انداختن</h3>
@@ -64,7 +92,7 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>روند بازی</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>روند بازی</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>از اینجا به بعد دقیقاً مثل حکم است. حاکم اولین کارت را می‌زند. بعد بقیه به نوبت یک کارت می‌گذارند.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>قانون اصلی:</strong> باید از همان خال بازی کنید. اگر از خالی که شروع شده کارت دارید، حتماً باید از همان بگذارید. اگر ندارید، آزادید هر کارتی بگذارید — از جمله حکم.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}><strong style={{ "color": "#f3d391" }}>دست را چه کسی می‌برد؟</strong> اگر کسی حکم گذاشته باشد، بزرگ‌ترین حکم می‌برد. اگر هیچ حکمی گذاشته نشده، بزرگ‌ترین کارتِ خالِ شروع می‌برد.</p>
@@ -74,7 +102,7 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>امتیازدهی</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>امتیازدهی</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 26px", "textWrap": "pretty" }}>اینجا تفاوت اصلی شلم با حکم است. دو چیز امتیاز دارد: بعضی کارت‌ها، و خودِ دست‌ها.</p>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>امتیاز کارت‌ها</h3>
       <div style={{ "border": "1px solid rgba(232,193,105,0.22)", "borderRadius": "14px", "overflow": "hidden", "marginBottom": "26px" }}>
@@ -158,7 +186,7 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>واریانت‌ها</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>واریانت‌ها</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 26px", "textWrap": "pretty" }}>شلم بازی‌ای است که تقریباً هیچ دو جمعی دقیقاً مثل هم بازی‌اش نمی‌کنند. این‌ها رایج‌ترین‌هایند.</p>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>شلم با جوکر</h3>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>پرطرفدارترین واریانت. دو جوکر وارد بازی می‌شوند و بازی را تندتر و پرریسک‌تر می‌کنند.</p>
@@ -183,11 +211,13 @@ export default function ShelemRulesContent() {
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 16px", "textWrap": "pretty" }}>با اضافه شدن ۳۵ امتیاز، جمع امتیاز هر دست از ۱۶۵ به ۲۰۰ می‌رسد و حداقل اعلام معمولاً بالاتر می‌رود.</p>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 18px", "textWrap": "pretty" }}>دو مسئله‌ی فنی که باید حل شود:</p>
       <div style={{ "display": "grid", "gap": "14px", "marginBottom": "26px" }}>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۱. تعداد کارت.</strong> با ۵۴ برگ، تقسیم ۱۲تایی جواب نمی‌دهد. دو راه رایج: یا دو کارت کم‌ارزش (معمولاً دو تا ۲) کنار گذاشته می‌شود تا باز ۵۲ برگ بماند، یا زمین شش‌برگی می‌شود.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۱</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>تعداد کارت.</strong> با ۵۴ برگ، تقسیم ۱۲تایی جواب نمی‌دهد. دو راه رایج: یا دو کارت کم‌ارزش (معمولاً دو تا ۲) کنار گذاشته می‌شود تا باز ۵۲ برگ بماند، یا زمین شش‌برگی می‌شود.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۲. جوکر از چه خالی است؟</strong> چون جوکر خال ندارد، وقتی کسی جوکر می‌زند باید مشخص باشد بقیه چه کاری مجازند. رایج‌ترین قاعده: جوکر را می‌شود هر وقت خواستید بازی کنید، حتی اگر از خال شروع‌شده کارت داشته باشید — و اگر جوکر خودش دست را شروع کند، نفر بعدی هر کارتی که بخواهد می‌گذارد.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۲</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>جوکر از چه خالی است؟</strong> چون جوکر خال ندارد، وقتی کسی جوکر می‌زند باید مشخص باشد بقیه چه کاری مجازند. رایج‌ترین قاعده: جوکر را می‌شود هر وقت خواستید بازی کنید، حتی اگر از خال شروع‌شده کارت داشته باشید — و اگر جوکر خودش دست را شروع کند، نفر بعدی هر کارتی که بخواهد می‌گذارد.</p>
         </div>
       </div>
       <h3 style={{ "fontSize": "clamp(17px,2.4vw,20px)", "fontWeight": "800", "color": "#f3d391", "margin": "0 0 14px" }}>حالت‌های بدون حکم: سرس، نرس و آس نرس</h3>
@@ -230,15 +260,17 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <div style={{ "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px" }}>
-        <h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 16px" }}>شما چطور بازی می‌کنید؟</h2>
+      <div style={{ "position": "relative", "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "16px", "padding": "28px" }}>
+        <div aria-hidden="true" style={{ "position": "absolute", "top": "14px", "right": "14px", "width": "26px", "height": "26px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
+        <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
+        <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 16px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>شما چطور بازی می‌کنید؟</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
         <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px", "textWrap": "pretty" }}>شلم در هر شهر و هر خانواده یک قاعده‌ی کوچک متفاوت دارد. اگر در جمع شما قاعده‌ای هست که اینجا نیامده، برایمان بنویسید. قاعده‌های تأییدشده را با نام شهر یا جمعی که فرستاده به همین صفحه اضافه می‌کنیم.</p>
       <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
       </div>
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>واژه‌نامه</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>واژه‌نامه</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <div style={{ "border": "1px solid rgba(232,193,105,0.22)", "borderRadius": "14px", "overflow": "hidden", "marginBottom": "26px" }}>
         <div style={{ "display": "grid", "gridTemplateColumns": "1fr 2.2fr", "padding": "14px 20px", "background": "rgba(216,174,68,0.1)" }}>
           <span style={{ "fontSize": "14px", "fontWeight": "800", "color": "#d8ae44" }}>اصطلاح</span>
@@ -288,31 +320,37 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>اشتباه‌های رایج</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>اشتباه‌های رایج</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <div style={{ "display": "grid", "gap": "14px" }}>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۱. فکر کردن اینکه تعداد دست‌ها مهم است.</strong> بزرگ‌ترین اشتباه کسی که از حکم می‌آید. در شلم می‌شود ۸ دست از ۱۲ دست را برد و باز هم باخت، اگر آس‌ها و ده‌ها در چهار دست دیگر بوده باشند.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۱</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>فکر کردن اینکه تعداد دست‌ها مهم است.</strong> بزرگ‌ترین اشتباه کسی که از حکم می‌آید. در شلم می‌شود ۸ دست از ۱۲ دست را برد و باز هم باخت، اگر آس‌ها و ده‌ها در چهار دست دیگر بوده باشند.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۲. اعلام بلندپروازانه با کارت خوب ولی بی‌هم‌تیمی.</strong> کارت‌های شما نصف ماجراست. اگر هم‌تیمی‌تان پاس داده، یعنی دستش خالی است — اعلامتان را پایین بیاورید.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۲</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>اعلام بلندپروازانه با کارت خوب ولی بی‌هم‌تیمی.</strong> کارت‌های شما نصف ماجراست. اگر هم‌تیمی‌تان پاس داده، یعنی دستش خالی است — اعلامتان را پایین بیاورید.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۳. دور انداختن کارت‌های امتیازدار در مرحله‌ی زمین.</strong> یادتان باشد امتیاز کارت‌های دورانداخته مال شماست، ولی خودِ کارت دیگر برای بردن دست به کارتان نمی‌آید. آسِ خالی که حکم نیست را دور بیندازید؛ آسِ حکم را هرگز.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۳</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>دور انداختن کارت‌های امتیازدار در مرحله‌ی زمین.</strong> یادتان باشد امتیاز کارت‌های دورانداخته مال شماست، ولی خودِ کارت دیگر برای بردن دست به کارتان نمی‌آید. آسِ خالی که حکم نیست را دور بیندازید؛ آسِ حکم را هرگز.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۴. نگه داشتن حکم تا آخر بازی.</strong> حکم‌های نگه‌داشته‌شده در دست شما امتیاز نمی‌سازند. حکم برای گرفتن دست‌های امتیازدار است، نه برای نمایش.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۴</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>نگه داشتن حکم تا آخر بازی.</strong> حکم‌های نگه‌داشته‌شده در دست شما امتیاز نمی‌سازند. حکم برای گرفتن دست‌های امتیازدار است، نه برای نمایش.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۵. فراموش کردن اینکه پاس بازگشت‌ناپذیر است.</strong> خیلی‌ها برای «دیدن اینکه بقیه چه می‌گویند» پاس می‌دهند و بعد می‌خواهند برگردند. نمی‌شود.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۵</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>فراموش کردن اینکه پاس بازگشت‌ناپذیر است.</strong> خیلی‌ها برای «دیدن اینکه بقیه چه می‌گویند» پاس می‌دهند و بعد می‌خواهند برگردند. نمی‌شود.</p>
         </div>
-        <div style={{ "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
-          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>۶. جمع نکردن دست‌های برده‌شده جدا.</strong> آخر دست باید بشمارید. اگر کارت‌ها قاطی شده باشند، شمارش غیرممکن است.</p>
+        <div style={{ "display": "flex", "gap": "16px", "alignItems": "flex-start", "background": "rgba(255,255,255,0.035)", "border": "1px solid rgba(232,193,105,0.2)", "borderRadius": "12px", "padding": "20px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 34px", "width": "34px", "height": "34px", "borderRadius": "50%", "border": "1px solid rgba(232,193,105,0.5)", "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "16px", "fontWeight": "800", "color": "#e8c169" }}>۶</span>
+          <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>جمع نکردن دست‌های برده‌شده جدا.</strong> آخر دست باید بشمارید. اگر کارت‌ها قاطی شده باشند، شمارش غیرممکن است.</p>
         </div>
       </div>
     </section>
 
     <section style={{ "padding": "0 0 44px" }}>
-      <h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 20px" }}>سؤال‌های پرتکرار</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 20px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(21px,3.8vw,28px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>سؤال‌های پرتکرار</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <div style={{ "display": "grid", "gap": "20px" }}>
         <div><h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>شلم را چند نفر بازی می‌کنند؟</h3><p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>دقیقاً چهار نفر، در دو تیم دو نفره‌ی روبه‌رو.</p></div>
         <div><h3 style={{ "fontSize": "17px", "fontWeight": "700", "color": "#f2ddb4", "margin": "0 0 8px" }}>فرق شلم و حکم چیست؟</h3><p style={{ "fontSize": "16px", "color": "#cdb797", "lineHeight": "1.95", "margin": "0" }}>در حکم فقط تعداد دست‌ها مهم است و حکم را برنده‌ی قرعه انتخاب می‌کند. در شلم امتیاز کارت‌ها شمرده می‌شود و حق انتخاب حکم را کسی می‌گیرد که بالاترین عدد را در حراج اعلام کند — و اگر به آن عدد نرسد، جریمه می‌شود.</p></div>
@@ -326,12 +364,18 @@ export default function ShelemRulesContent() {
     </section>
 
     <section style={{ "padding": "0 0 56px" }}>
-      <h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0 0 18px" }}>بازی‌های دیگر</h2>
+      <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 18px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>بازی‌های دیگر</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
       <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 12px" }}>اگر شلم را یاد گرفتید، این‌ها را هم امتحان کنید:</p>
-      <ul style={{ "margin": "0 0 26px", "paddingInlineStart": "22px", "fontSize": "17px", "color": "#cdb797", "lineHeight": "2.1" }}>
-        <li><strong style={{ "color": "#f3d391" }}>حکم</strong> — شناخته‌شده‌ترین بازی ورق ایران. ساده‌تر شروع می‌شود، عمیق ادامه پیدا می‌کند.</li>
-        <li><strong style={{ "color": "#f3d391" }}>بی‌بی‌سلام</strong> — سبک‌تر، سریع‌تر، مناسب جمع‌های بزرگ‌تر.</li>
-      </ul>
+      <div style={{ "display": "grid", "gap": "10px", "margin": "0 0 26px" }}>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>حکم</strong> — شناخته‌شده‌ترین بازی ورق ایران. ساده‌تر شروع می‌شود، عمیق ادامه پیدا می‌کند.</p>
+        </div>
+        <div style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px" }}>
+          <span aria-hidden="true" style={{ "flex": "0 0 8px", "width": "8px", "height": "8px", "marginTop": "9px", "background": "rgba(232,193,105,0.55)", "transform": "rotate(45deg)" }}></span>
+          <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0" }}><strong style={{ "color": "#f3d391" }}>بی‌بی‌سلام</strong> — سبک‌تر، سریع‌تر، مناسب جمع‌های بزرگ‌تر.</p>
+        </div>
+      </div>
       <a href="https://hakem.am/" target="_blank" rel="noopener noreferrer" style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit", "textDecoration": "none", "display": "inline-block" }}>شروع بازی</a>
     </section>
   </main>
