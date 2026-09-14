@@ -128,9 +128,6 @@ export default function TermsContent() {
 
         <section style={sectionStyle}>
           <h2 style={h2Style}>۹. حاکمم قمار نیست</h2>
-          <div style={{ "background": "rgba(216,174,68,0.07)", "border": "1px solid rgba(232,193,105,0.25)", "borderRadius": "12px", "padding": "20px", "marginBottom": "16px" }}>
-            <p style={{ "fontSize": "16px", "color": "#f2ddb4", "lineHeight": "1.95", "margin": "0", "fontWeight": "700" }}>این بند مهم‌ترین بخش این متن است.</p>
-          </div>
           <p style={pStyle}>حاکمم صرفاً یک بازی سرگرمی و مهارتی است. در آن هیچ برد یا باخت مالی واقعی وجود ندارد.</p>
           <ul style={ulStyle}>
             <li>شما نمی‌توانید روی نتیجه‌ی بازی شرط ببندید. بازی طوری طراحی شده که مقدار سکه‌ی هر دست ثابت است و بازیکن نمی‌تواند آن را تعیین کند.</li>
