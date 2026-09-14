@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { useGo } from '../../nav.jsx';
 import VideoWatermark from '../../components/VideoWatermark.jsx';
+import RuleSuggestionModal from '../../components/RuleSuggestionModal.jsx';
 
 export default function BebeRulesContent() {
   const go = useGo();
+  const [ruleFormOpen, setRuleFormOpen] = useState(false);
   return (
     <>
+      <RuleSuggestionModal open={ruleFormOpen} onClose={() => setRuleFormOpen(false)} title="پیشنهاد قانون بی‌بی‌سلام" />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
       <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-48px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/bebe-lady-still.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "WebkitMaskImage": "radial-gradient(circle, black 55%, transparent 100%)", "maskImage": "radial-gradient(circle, black 55%, transparent 100%)", "pointerEvents": "none" }}></div>
@@ -146,7 +150,7 @@ export default function BebeRulesContent() {
         <VideoWatermark src="/assets/bebe-lady-watermark" style={{ bottom: '-10px', left: '10px', width: '220px', height: '220px', opacity: 0.22, transform: 'scaleX(-1)', WebkitMaskImage: 'radial-gradient(circle, black 55%, transparent 100%)', maskImage: 'radial-gradient(circle, black 55%, transparent 100%)' }} />
         <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 16px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>در جمع شما چطور بازی می‌شود؟</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
         <p style={{ "position": "relative", "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px", "textWrap": "pretty" }}>واکنش‌های بی‌بی سلام تقریباً در هر خانواده فرق دارد. اگر جمع شما واکنشی دارد که اینجا نیامده، برایمان بنویسید — قاعده‌های تأییدشده را با نام شهر یا جمعی که فرستاده اضافه می‌کنیم.</p>
-      <button style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
+      <button onClick={() => setRuleFormOpen(true)} style={{ "position": "relative", "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
       </div>
     </section>
 

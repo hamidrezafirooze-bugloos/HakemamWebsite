@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { useGo } from '../../nav.jsx';
 import GoatRunWatermark from '../../components/GoatRunWatermark.jsx';
+import RuleSuggestionModal from '../../components/RuleSuggestionModal.jsx';
 
 export default function ShelemRulesContent() {
   const go = useGo();
+  const [ruleFormOpen, setRuleFormOpen] = useState(false);
   return (
     <>
+      <RuleSuggestionModal open={ruleFormOpen} onClose={() => setRuleFormOpen(false)} title="پیشنهاد قانون شلم" />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
       <GoatRunWatermark style={{ top: '-46px', left: '-88px', width: '320px', height: '320px', opacity: 0.35 }} />
@@ -257,7 +261,7 @@ export default function ShelemRulesContent() {
         <div aria-hidden="true" style={{ "position": "absolute", "bottom": "14px", "left": "14px", "width": "26px", "height": "26px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
         <div style={{ "display": "flex", "alignItems": "center", "gap": "14px", "margin": "0 0 16px" }}><span aria-hidden="true" style={{ "width": "26px", "height": "26px", "flex": "0 0 26px", "border": "1px solid rgba(232,193,105,0.55)", "transform": "rotate(45deg)", "position": "relative" }}><span style={{ "position": "absolute", "inset": "5px", "background": "rgba(232,193,105,0.35)" }}></span></span><h2 style={{ "fontSize": "clamp(19px,3vw,24px)", "fontWeight": "800", "color": "#e8c169", "margin": "0" }}>شما چطور بازی می‌کنید؟</h2><span aria-hidden="true" style={{ "flex": "1", "height": "1px", "background": "linear-gradient(90deg,rgba(232,193,105,0.35),transparent)" }}></span></div>
         <p style={{ "fontSize": "17px", "color": "#cdb797", "lineHeight": "2", "margin": "0 0 22px", "textWrap": "pretty" }}>شلم در هر شهر و هر خانواده یک قاعده‌ی کوچک متفاوت دارد. اگر در جمع شما قاعده‌ای هست که اینجا نیامده، برایمان بنویسید. قاعده‌های تأییدشده را با نام شهر یا جمعی که فرستاده به همین صفحه اضافه می‌کنیم.</p>
-      <button style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
+      <button onClick={() => setRuleFormOpen(true)} style={{ "background": "#d8ae44", "color": "#33100d", "fontWeight": "800", "fontSize": "16px", "padding": "15px 30px", "borderRadius": "10px", "border": "none", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
       </div>
     </section>
 

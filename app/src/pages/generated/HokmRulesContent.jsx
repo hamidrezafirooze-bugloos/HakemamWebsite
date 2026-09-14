@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import { useGo } from '../../nav.jsx';
+import RuleSuggestionModal from '../../components/RuleSuggestionModal.jsx';
 
 export default function HokmRulesContent() {
   const go = useGo();
+  const [ruleFormOpen, setRuleFormOpen] = useState(false);
   return (
     <>
+      <RuleSuggestionModal open={ruleFormOpen} onClose={() => setRuleFormOpen(false)} title="پیشنهاد قانون حکم" />
       <main style={{ "maxWidth": "840px", "margin": "0 auto", "padding": "0 clamp(16px,4vw,24px)" }}>
     <section style={{ "position": "relative", "padding": "clamp(44px,7vw,80px) 0 40px", "overflow": "hidden" }}>
       <div aria-hidden="true" style={{ "position": "absolute", "top": "-46px", "left": "-88px", "width": "320px", "height": "320px", "opacity": "0.35", "backgroundImage": "url('/assets/hokm-tile-rosette.webp')", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPosition": "center", "animation": "spinSlow 120s linear infinite", "pointerEvents": "none" }}></div>
@@ -234,7 +238,7 @@ export default function HokmRulesContent() {
         <div aria-hidden="true" style={{ "position": "absolute", "top": "10px", "right": "10px", "width": "20px", "height": "20px", "borderTop": "2px solid rgba(232,193,105,0.5)", "borderRight": "2px solid rgba(232,193,105,0.5)" }}></div>
         <div aria-hidden="true" style={{ "position": "absolute", "bottom": "10px", "left": "10px", "width": "20px", "height": "20px", "borderBottom": "2px solid rgba(232,193,105,0.5)", "borderLeft": "2px solid rgba(232,193,105,0.5)" }}></div>
         <p style={{ "fontSize": "17px", "color": "#e6d5b8", "lineHeight": "1.9", "margin": "0", "flex": "1", "minWidth": "240px" }}><strong style={{ "color": "#f3d391" }}>حکمِ شما کدام است؟</strong> اگر در شهر یا خانواده‌ی شما قاعده‌ای هست که اینجا نیامده، برایمان بفرستید.</p>
-        <button style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "13px 24px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را اضافه کن</button>
+        <button onClick={() => setRuleFormOpen(true)} style={{ "background": "transparent", "color": "#f0cf84", "fontWeight": "700", "fontSize": "15px", "padding": "13px 24px", "borderRadius": "10px", "border": "1px solid rgba(232,193,105,0.45)", "cursor": "pointer", "fontFamily": "inherit" }}>قاعده‌ی ما را بفرست</button>
       </div>
     </section>
 
