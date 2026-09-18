@@ -390,7 +390,8 @@ nav.solid{background:rgba(15,12,34,.75);backdrop-filter:blur(10px);border-bottom
 .hero .sub{margin-top:16px;max-width:46ch;color:var(--mut);font-weight:300;font-size:clamp(15px,1.7vw,18px);opacity:0;animation:rise .9s ease 1.5s forwards}
 .hero .eyebrow{opacity:0;animation:rise .9s ease 1s forwards;margin-bottom:20px}
 @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--mut);opacity:0;animation:rise 1s ease 1.9s forwards}
+@keyframes scrollRise{from{opacity:0;transform:translate(-50%,16px)}to{opacity:1;transform:translateX(-50%)}}
+.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--mut);opacity:0;animation:scrollRise 1s ease 1.9s forwards}
 .scroll::after{content:&quot;&quot;;display:block;width:1px;height:32px;margin:10px auto 0;background:linear-gradient(var(--blue2),transparent);animation:pulse 1.8s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
 /* sections */
@@ -448,11 +449,13 @@ footer .rings2 span:nth-child(2){animation-delay:2s} footer .rings2 span:nth-chi
 .micro{margin-top:32px;color:var(--mut);font-size:12px;position:relative;z-index:2}
 .family{display:inline-flex;gap:8px;align-items:center;margin-top:14px;font-size:12px;color:var(--mut);position:relative;z-index:2}
 .family a{color:var(--blue2)}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important} .hero .mark,.chips,.hero h1,.hero .sub,.hero .eyebrow,.scroll,.reveal{opacity:1!important;transform:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important} .hero .mark,.chips,.hero h1,.hero .sub,.hero .eyebrow,.reveal{opacity:1!important;transform:none!important} .scroll{opacity:1!important;transform:translateX(-50%)!important}}
 
 
 /* hero: full logo base (letters complete), blue figure fills in top-left -&gt; bottom-right */
 .markstage{position:relative;width:min(64vw,320px);aspect-ratio:760/704;filter:drop-shadow(0 30px 60px rgba(0,0,0,.5))}
+@media(max-height:760px){.hero{padding:64px 20px 90px}.markstage{width:min(48vw,220px)}.chips{margin-top:16px}.hero h1{margin-top:16px}.hero .sub{margin-top:10px}}
+@media(max-height:600px){.hero{padding:56px 20px 76px}.markstage{width:min(36vw,160px)}.hero .eyebrow{margin-bottom:12px}.chips{margin-top:12px}.hero h1{margin-top:12px}.hero .sub{margin-top:8px}.scroll{bottom:14px}}
 .markstage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .mk-base{opacity:0;animation:baseIn .9s ease .2s forwards}
 @keyframes baseIn{to{opacity:1}}
